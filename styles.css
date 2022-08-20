@@ -1,8 +1,10 @@
+/* Simple CSS resetting */
 *{
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
 }
+/* *This is important for responsive images */
 img{
   width: 100%;
 }
@@ -19,6 +21,7 @@ body{
   margin-bottom: 1em;
 }.illustration{
   position: relative;
+  border-radius: 8px 8px 0 0;
 }
 .illustration img{
   border-radius: 8px;
@@ -34,6 +37,20 @@ body{
 .illustration--article{
   display: flex;
   flex-direction: column;
+  margin-bottom: 1em;
+  border-radius: 0 0 8px 8px;
+  padding: .5em .5em 1em;
+}
+.illustration--heading{
+  margin-bottom: 1em;
+}.illustration--heading h2{
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: .3em;
+}
+.illustration--ending span{
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 
@@ -41,6 +58,50 @@ body{
 
 
 aside{
-  background-color: #c2bdbdbd;
+  text-align: center;
+  background-color: #c2bdbda2;
   border: solid 2px #8686865d;
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: max(50vh, 400px);
+}
+.aside--heading h3{
+  color: #020252;
+  font-weight: 700;
+  text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+}.aside--heading p{
+  font-size: 1.2rem;
+}.aside--middle p:nth-child(1){
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: .5em;
+}.aside--middle p:nth-child(2){
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: .3em;
+}.aside--middle p:nth-child(3){
+  font-size: 1.2rem;
+  font-weight: 500;  
+  color: #aca7a7;
+}
+
+.aside--button{
+  width: 70%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.aside--button div{
+  background-color: #514ef3b7;
+  color: #fff;
+  padding: .5em 0;
+  font-size: 1.2rem;
+  border-radius: 20px;
 }
